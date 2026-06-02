@@ -1,0 +1,15 @@
+# TemplatePlugin Configuration
+
+database:
+  # Database type: sqlite, mysql, postgresql
+  type: sqlite
+
+  # SQLite: path relative to the plugin folder
+  file: database.db
+
+  # MySQL / PostgreSQL
+  # host: localhost
+  # port: 3306
+  # name: templateplugin
+  # username: root
+  # password: ""

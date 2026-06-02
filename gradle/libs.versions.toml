@@ -1,0 +1,33 @@
+[versions]
+kotlin = "2.4.0-RC2"
+coroutines = "1.10.2"
+spotless = "7.0.2"
+ktlint = "1.5.0"
+
+paper-api = "26.1.2.build.+"
+
+paperweight-userdev = "2.0.0-beta.21"
+shadow = "9.4.2"
+resource-factory = "1.3.1"
+
+exposed = "0.61.0"
+sqliteJdbc = "3.47.0.0"
+mysqlConnector = "9.3.0"
+postgresql = "42.7.4"
+h2 = "2.3.232"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-dao = { module = "org.jetbrains.exposed:exposed-dao", version.ref = "exposed" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+sqlite-jdbc = { module = "org.xerial:sqlite-jdbc", version.ref = "sqliteJdbc" }
+h2 = { module = "com.h2database:h2", version.ref = "h2" }
+
+[plugins]
+paperweight-userdev = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight-userdev" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+resource-factory-paper = { id = "xyz.jpenilla.resource-factory-paper-convention", version.ref = "resource-factory" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
